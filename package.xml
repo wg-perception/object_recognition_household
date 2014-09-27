@@ -1,0 +1,38 @@
+<package>
+  <name>object_recognition_household</name>
+  <version>0.0.0</version>
+  <description>A plugon for ORK for the household object database</description>
+  <author>Marius Muja</author>
+  <author email="vrabaud@willowgarage.com">Vincent Rabaud</author>
+  <maintainer email="vincent.rabaud@gmail.com">Vincent Rabaud</maintainer>
+  <license>BSD</license>
+
+  <url>http://ecto.willowgarage.com</url>
+
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>ecto</build_depend>
+  <build_depend>household_objects_database</build_depend>
+  <build_depend>moveit_core</build_depend>
+  <build_depend>object_recognition_core</build_depend>
+  <build_depend>object_recognition_msgs</build_depend>
+  <build_depend>opencv_candidate</build_depend>
+  <build_depend>sql_database</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>pluginlib</build_depend>
+
+  <run_depend>ecto</run_depend>
+  <run_depend>household_objects_database</run_depend>
+  <run_depend>moveit_core</run_depend>
+  <run_depend>object_recognition_core</run_depend>
+  <run_depend>object_recognition_msgs</run_depend>
+  <run_depend>opencv_candidate</run_depend>
+  <run_depend>sql_database</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>pluginlib</run_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <object_recognition_core plugin="${prefix}/db_plugin.xml" />
+  </export>
+</package>
