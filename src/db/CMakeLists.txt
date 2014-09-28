@@ -15,7 +15,7 @@ include_directories(SYSTEM ${PYTHON_INCLUDE_PATH})
 add_library(ork_household_db_interface module_python.cpp
                                   wrap_object_db.cpp
 )
-target_link_libraries(ork_household_db_interface household_db ${catkin_LIBRARIES})
+target_link_libraries(ork_household_db_interface ork_household_db ${catkin_LIBRARIES})
 
 set_target_properties(ork_household_db_interface PROPERTIES
                       LIBRARY_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_PYTHON_DESTINATION}

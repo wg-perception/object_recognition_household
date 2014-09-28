@@ -12,6 +12,9 @@ include_directories(${catkin_INCLUDE_DIRS}
   include
 )
 
+#install targets for all things python
+catkin_python_setup()
+
 add_subdirectory(src)
 
 # add the tests
